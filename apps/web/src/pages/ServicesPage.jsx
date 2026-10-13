@@ -6,10 +6,10 @@ import ServiceCard from '@/components/ServiceCard';
 const servicesList = [
   {
     title: 'Aviation Consulting',
-    description: 'Strategic guidance for operators and infrastructure developers to optimize aviation operations in Mongolia, encompassing rigorous regulatory compliance and structural efficiency.',
+    description: 'Strategic guidance, technical asset management, and independent audit & assurance for operators and infrastructure developers in Mongolia, encompassing rigorous regulatory compliance and structural efficiency.',
     icon: 'BarChart3',
     path: '/services/aviation-consulting',
-    features: ['Regulatory compliance', 'Certification support', 'Strategic planning'],
+    features: ['Regulatory compliance', 'Certification support', 'Strategic planning', 'Audit & assurance'],
     colorTheme: 'purple'
   },
   {
@@ -17,7 +17,7 @@ const servicesList = [
     description: 'Professional ground handling services ensuring rapid, safe, and efficient turnaround times for all aircraft types across major Mongolian airports.',
     icon: 'PlaneTakeoff',
     path: '/services/ground-handling',
-    features: ['Aircraft servicing', 'Passenger handling', 'Cargo operations'],
+    features: ['Aircraft servicing', 'Passenger handling', 'Cargo operations', 'Airport transfers'],
     colorTheme: 'blue'
   },
   {
@@ -29,28 +29,12 @@ const servicesList = [
     colorTheme: 'teal'
   },
   {
-    title: 'Audit & Assurance',
-    description: 'Independent assessment services to verify strict compliance with international and local aviation standards, minimizing operational risks for flight operators.',
-    icon: 'ShieldCheck',
-    path: '/services/audit-assurance',
-    features: ['Compliance audits', 'Safety assessments', 'Quality assurance'],
-    colorTheme: 'navy'
-  },
-  {
     title: 'Aviation Training',
     description: 'Industry-standard training programs for aviation personnel to ensure the highest levels of safety, proficiency, and operational readiness via Aeroskill LLC.',
     icon: 'GraduationCap',
     path: '/services/aviation-training',
     features: ['Pilot & Recurrent training', 'Ground ops training', 'Specialized programs'],
     colorTheme: 'green'
-  },
-  {
-    title: 'Pick-up Service',
-    description: 'Reliable, secure logistics and transportation coordination. We offer specialized surface transport for crews, VIP passengers, and sensitive equipment.',
-    icon: 'Car',
-    path: '/services/pick-up-service',
-    features: ['Crew logistics', 'Transportation', 'Nationwide coverage'],
-    colorTheme: 'accent'
   }
 ];
 
@@ -59,7 +43,7 @@ const ServicesPage = () => {
     <>
       <Helmet>
         <title>Our Services | Aeronautics LLC Mongolia</title>
-        <meta name="description" content="Detailed overview of our core aviation services including Aviation Consulting, Ground Handling, Aircraft Dealership, Audit & Assurance, Aviation Training, and Pick-up Services." />
+        <meta name="description" content="Detailed overview of our core aviation services including Aviation Consulting (including Audit & Assurance), Ground Handling (including Pick-up Service), Aircraft Dealership, and Aviation Training." />
       </Helmet>
 
       <main className="bg-background min-h-screen">

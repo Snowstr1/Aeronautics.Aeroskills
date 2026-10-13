@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import { Navigate, Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from 'sonner';
 
 import ScrollToTop from '@/components/ScrollToTop.jsx';
@@ -15,9 +15,7 @@ import ContactPage from '@/pages/ContactPage.jsx';
 import AviationConsultingPage from '@/pages/AviationConsultingPage.jsx';
 import GroundHandlingPage from '@/pages/GroundHandlingPage.jsx';
 import AircraftDealershipPage from '@/pages/AircraftDealershipPage.jsx';
-import AuditAssurancePage from '@/pages/AuditAssurancePage.jsx';
 import AviationTrainingPage from '@/pages/AviationTrainingPage.jsx';
-import PickupServicePage from '@/pages/PickupServicePage.jsx';
 
 function App() {
   return (
@@ -35,9 +33,11 @@ function App() {
             <Route path="/services/aviation-consulting" element={<AviationConsultingPage />} />
             <Route path="/services/ground-handling" element={<GroundHandlingPage />} />
             <Route path="/services/aircraft-dealership" element={<AircraftDealershipPage />} />
-            <Route path="/services/audit-assurance" element={<AuditAssurancePage />} />
+            {/* Audit & Assurance was merged into Aviation Consulting; keep old links working */}
+            <Route path="/services/audit-assurance" element={<Navigate to="/services/aviation-consulting#audit-assurance" replace />} />
             <Route path="/services/aviation-training" element={<AviationTrainingPage />} />
-            <Route path="/services/pick-up-service" element={<PickupServicePage />} />
+            {/* Pickup Service was merged into Ground Handling; keep old links working */}
+            <Route path="/services/pick-up-service" element={<Navigate to="/services/ground-handling" replace />} />
 
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />

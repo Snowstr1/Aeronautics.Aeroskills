@@ -13,9 +13,7 @@ const servicesLinks = [
   { label: 'Aviation Consulting', path: '/services/aviation-consulting' },
   { label: 'Ground Handling', path: '/services/ground-handling' },
   { label: 'Aircraft Dealership', path: '/services/aircraft-dealership' },
-  { label: 'Audit & Assurance', path: '/services/audit-assurance' },
   { label: 'Aviation Training', path: '/services/aviation-training' },
-  { label: 'Pickup Service', path: '/services/pick-up-service' },
 ];
 
 const mainLinks = [
