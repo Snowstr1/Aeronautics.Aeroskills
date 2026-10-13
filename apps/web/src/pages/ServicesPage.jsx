@@ -48,8 +48,8 @@ const ServicesPage = () => {
 
       <main className="bg-background min-h-screen">
         {/* HERO SECTION */}
-        <section className="py-20 lg:py-32 bg-gradient-navy-teal text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
+        <section className="py-20 lg:py-32 bg-gradient-navy-teal text-white relative overflow-hidden hero-fixed-clip">
+          <div className="hero-fixed-media bg-[url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&q=80')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">

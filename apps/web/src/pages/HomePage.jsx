@@ -50,8 +50,8 @@ const HomePage = () => {
       <main className="bg-background">
         
         {/* Hero Section */}
-        <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-navy-sky min-h-[90vh] flex items-center">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1685031021737-685e83724d26?auto=format&fit=crop&q=80')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
+        <section className="relative py-20 lg:py-32 overflow-hidden hero-fixed-clip bg-gradient-navy-sky min-h-[90vh] flex items-center">
+          <div className="hero-fixed-media bg-[url('https://images.unsplash.com/photo-1685031021737-685e83724d26?auto=format&fit=crop&q=80')] opacity-10 mix-blend-overlay bg-cover bg-center"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <motion.div initial={{

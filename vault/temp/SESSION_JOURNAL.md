@@ -1331,3 +1331,41 @@
 - url: http://192.168.1.105:3000/services/aviation-consulting#asset-management
 - via: popstate
 
+## 2026-10-13 09:03:43.109Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Aeronautics LLC home","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 09:03:43.109Z navigate
+- url: http://192.168.1.105:3000/
+- via: pushState
+
+## 2026-10-13 09:08:14.284Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 09:08:20.784Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 09:08:20.784Z navigate
+- url: http://192.168.1.105:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 09:13:48.117Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Aeronautics LLC home","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 09:13:48.118Z navigate
+- url: http://192.168.1.105:3000/
+- via: pushState
+
+## 2026-10-13 09:14:35.291Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 09:14:35.292Z navigate
+- url: http://192.168.1.105:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 09:14:54.802Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 09:14:54.802Z navigate
+- url: http://192.168.1.105:3000/services/aviation-consulting
+- via: pushState
+

@@ -21,12 +21,12 @@ const GroundHandlingPage = () => {
 
       <main className="bg-background min-h-screen pb-20">
         {/* HERO SECTION */}
-        <section className="relative py-24 lg:py-32 overflow-hidden flex items-center justify-center min-h-[50vh]">
+        <section className="relative py-24 lg:py-32 overflow-hidden hero-fixed-clip flex items-center justify-center min-h-[50vh]">
           <div className="absolute inset-0 z-0">
             <img 
               src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/c2f742825aaf840431180795d85bc025.jpg" 
               alt="Ground handling worker in safety gear directing aircraft on tarmac" 
-              className="w-full h-full object-cover object-center" 
+              className="hero-fixed-media object-cover object-center" 
             />
             <div className="hero-overlay-dark"></div>
           </div>

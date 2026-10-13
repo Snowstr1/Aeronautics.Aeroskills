@@ -142,11 +142,11 @@ const AviationTrainingPage = () => {
       <main className="bg-background min-h-screen">
         
         {/* HERO SECTION */}
-        <section className="relative min-h-[60vh] flex items-center justify-center pt-20 border-b-8 border-secondary overflow-hidden">
+        <section className="relative min-h-[60vh] flex items-center justify-center pt-20 border-b-8 border-secondary overflow-hidden hero-fixed-clip">
           <img 
             src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/2319a00238e7c1fdbdf8471446c18c5a.webp" 
             alt="Cessna aircraft on runway with mountains" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="hero-fixed-media object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/40"></div>

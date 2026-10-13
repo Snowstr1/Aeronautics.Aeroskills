@@ -35,13 +35,13 @@ const AircraftDealershipPage = () => {
       <main className="bg-background min-h-screen">
         
         {/* Hero Banner */}
-        <section className="relative min-h-[50vh] md:min-h-[60vh] w-full flex flex-col items-center justify-center overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-[60vh] w-full flex flex-col items-center justify-center overflow-hidden hero-fixed-clip">
           {/* Background Image & Overlay */}
           <div className="absolute inset-0 z-0">
             <img
               src="https://images.unsplash.com/photo-1693835195915-b30cc5ae885c"
               alt="Luxury Business Jet parked on the tarmac"
-              className="w-full h-full object-cover object-center"
+              className="hero-fixed-media object-cover object-center"
             />
             {/* Dark gradient overlay for text readability and premium feel */}
             <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950/90 mix-blend-multiply" />

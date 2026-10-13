@@ -131,12 +131,12 @@ const AboutPage = () => {
       <main className="bg-background min-h-screen">
         
         {/* HERO SECTION */}
-        <section className="relative min-h-[90vh] flex items-center justify-center border-b-8 border-accent">
+        <section className="relative min-h-[90vh] flex items-center justify-center border-b-8 border-accent hero-fixed-clip">
           <div className="absolute inset-0 z-0">
             <img 
               src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/2e5665663916302844d9e0080661774a.jpg" 
               alt="Commercial aircraft on tarmac at night with ground handling operations, personnel in safety vests, and airport lighting" 
-              className="w-full h-full object-cover object-center" 
+              className="hero-fixed-media object-cover object-center" 
             />
             <div className="absolute inset-0 bg-primary/90 mix-blend-multiply"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
