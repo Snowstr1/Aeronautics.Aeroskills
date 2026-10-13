@@ -1,19 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { Menu, X } from 'lucide-react';
 import Logo from '@/components/Logo.jsx';
 
+// Labels are shortened for the header only; page names stay unchanged elsewhere.
 const servicesLinks = [
-  { label: 'Aviation Consulting', path: '/services/aviation-consulting' },
+  { label: 'Consulting', path: '/services/aviation-consulting' },
   { label: 'Ground Handling', path: '/services/ground-handling' },
-  { label: 'Aircraft Dealership', path: '/services/aircraft-dealership' },
-  { label: 'Aviation Training', path: '/services/aviation-training' },
+  { label: 'Dealership', path: '/services/aircraft-dealership' },
+  { label: 'Training', path: '/services/aviation-training' },
 ];
 
 const mainLinks = [
@@ -22,7 +17,7 @@ const mainLinks = [
 ];
 
 const navItemBase =
-  'relative inline-flex items-center gap-1.5 py-2 text-base font-semibold tracking-wide outline-none transition-colors ' +
+  'relative inline-flex items-center gap-1.5 py-2 text-base font-semibold tracking-wide whitespace-nowrap outline-none transition-colors ' +
   'after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-full after:origin-left after:rounded-full ' +
   'after:bg-accent after:transition-transform after:duration-300 focus-visible:ring-2 focus-visible:ring-white/60 rounded-sm';
 
@@ -45,7 +40,7 @@ const Header = () => {
     location.pathname === path || location.pathname.startsWith(path + '/');
 
   return (
-    <header className="sticky top-0 w-full z-50 bg-gradient-navy-teal shadow-md border-b border-white/10">
+    <header className="sticky top-0 w-full z-50 bg-primary shadow-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
@@ -57,58 +52,12 @@ const Header = () => {
             <Logo className="group-hover:scale-105 filter drop-shadow-md" />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-10 ml-auto">
-
-            <DropdownMenu>
-              <DropdownMenuTrigger
-                className={`${navItemClass(isActive('/services'))} [&[data-state=open]>svg]:rotate-180`}
-              >
-                Services
-                <ChevronDown
-                  aria-hidden="true"
-                  className="w-4 h-4 opacity-80 transition-transform duration-200"
-                />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                align="end"
-                sideOffset={12}
-                className="w-60 p-2 rounded-xl border-border shadow-xl bg-background"
-              >
-                {servicesLinks.map((service) => (
-                  <DropdownMenuItem
-                    key={service.path}
-                    asChild
-                    className="rounded-lg cursor-pointer focus:bg-muted focus:text-primary"
-                  >
-                    <Link
-                      to={service.path}
-                      className={`w-full text-[15px] font-medium py-2.5 transition-colors ${
-                        isActive(service.path) ? 'text-primary font-semibold' : ''
-                      }`}
-                    >
-                      {service.label}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-                <div className="h-px bg-border my-1 mx-2"></div>
-                <DropdownMenuItem
-                  asChild
-                  className="rounded-lg cursor-pointer focus:bg-primary focus:text-white"
-                >
-                  <Link
-                    to="/services"
-                    className="w-full text-[15px] font-bold py-2.5 text-primary hover:text-white transition-colors"
-                  >
-                    View All Services
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            {mainLinks.map((link) => (
+          <nav aria-label="Main" className="hidden lg:flex items-center gap-7 xl:gap-10 ml-auto">
+            {[...servicesLinks, ...mainLinks].map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
+                aria-current={isActive(link.path) ? 'page' : undefined}
                 className={navItemClass(isActive(link.path))}
               >
                 {link.label}
@@ -117,7 +66,7 @@ const Header = () => {
           </nav>
 
           <button
-            className="md:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
+            className="lg:hidden p-2 text-white hover:bg-white/10 rounded-lg transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
@@ -128,7 +77,7 @@ const Header = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-background border-b border-border shadow-xl max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-background border-b border-border shadow-xl max-h-[80vh] overflow-y-auto">
           <div className="px-4 pt-4 pb-6 space-y-4">
             <div className="space-y-2">
               <div className="px-4 text-xs font-bold text-primary uppercase tracking-wider mb-2">

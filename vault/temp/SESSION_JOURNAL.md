@@ -1208,3 +1208,102 @@
 ## 2026-10-13 08:08:09.386Z click
 - element: {"tag":"html","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"\n\t\timport { injectIntoGlobalHook } from \"/@react-refresh\";\ninjectIntoGlobalHook(window);\nwindow.$RefreshReg$ = () => {};\nwindow.$RefreshSig$ = () => (type) => type;\n\n\t\t\n\n\t\t\n\t\t\n\t\t\n\t\t\n\t\tAviation Consulting | Aeronautics LLC\n\t\tconst SITE_PAGES_ENDPOINT = '/__horizons/site-pages';\n\nconst OUTGOING_SITE_PAGES_MESSAGE = 'sitePages';\nconst INCOMING_REQUEST_SITE_PAGES_MESSAGE = 'request-site-pages';\n\nconst ALLOWED_PARENT_ORIGINS = [\n\t'https://horizons.hostinger.com',\n\t'https://horizons.hostinger.dev',\n\t'https://horizons-frontend-local.hostinger.dev',\n\t'http://localhost:4000',\n];\n\nfunction postSitePages(pages) {\n\tlet parentOrigin = window.location.ancestorOrigins?.[0];\n\tif (!parentOrigin && document.referrer) {\n\t\ttry {\n\t\t\tparentOrigin = new URL(document.referrer).origin;\n\t\t} catch {}\n\t}\n\tif (parentOrigin && ALLOWED_PARENT_ORIGINS.includes(parentOrigin)) {\n\t\twindow.parent.postMessage({ type: OUTGOING_SITE_PAGES_MESSAGE, payload: { pages } }, parentOrigin);\n\t}\n}\n\nasync function sendSitePagesToParent() {\n\tif (window.self === window.top) {\n\t\treturn;\n\t}\n\n\ttry {\n\t\tconst response = await fetch(SITE_PAGES_ENDPOINT);\n\t\tif (!response.ok) {\n\t\t\tthrow new Error(`HTTP ${response.status}`);\n\t\t}\n\t\tpostSitePages(await response.json());\n\t} catch (error) {\n\t\tconsole.error('[site-pages] Failed to send site pages to parent:', error);\n\t}\n}\n\nif (window.self !== window.top) {\n\twindow.addEventListener('load', sendSitePagesToParent);\n\twindow.addEventListener('message', (event) => {\n\t\tif (event.data?.type === INCOMING_REQUEST_SITE_PAGES_MESSAGE) {\n\t\t\tsendSitePagesToParent();\n\t\t}\n\t});\n}\n\n\t\t\n\t#root[data-edit-mode-enabled=\"true\"] {\n\t\tcursor: pointer;\n\t}\n\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id] {\n\t\tcursor: pointer;\n\t\toutline: 2px dashed #357DF9;\n\t\toutline-offset: 2px;\n\t\tmin-height: 1em;\n\t\toverflow-wrap: anywhere;\n\t\tmin-width: 0;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] img[data-edit-id] {\n\t\toutline-offset: -2px;\n\t}\n\t#root[data-edit-mode-enabled=\"true\"] [data-edit-id]:hover {\n\t\tbackground-color..."}
 
+## 2026-10-13 08:26:49.127Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 08:26:49.129Z navigate
+- url: http://192.168.1.105:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 08:26:50.365Z click
+- element: {"tag":"nav","role":null,"ariaLabel":"Main","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ConsultingGround HandlingDealershipTrainingAboutContact"}
+
+## 2026-10-13 08:26:51.007Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ConsultingGround HandlingDealershipTrainingAboutContact"}
+
+## 2026-10-13 08:26:51.641Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Dealership"}
+
+## 2026-10-13 08:26:51.641Z navigate
+- url: http://192.168.1.105:3000/services/aircraft-dealership
+- via: pushState
+
+## 2026-10-13 08:26:52.429Z click
+- element: {"tag":"nav","role":null,"ariaLabel":"Main","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ConsultingGround HandlingDealershipTrainingAboutContact"}
+
+## 2026-10-13 08:26:53.138Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 08:26:53.138Z navigate
+- url: http://192.168.1.105:3000/services/aviation-training
+- via: pushState
+
+## 2026-10-13 08:26:53.926Z click
+- element: {"tag":"nav","role":null,"ariaLabel":"Main","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ConsultingGround HandlingDealershipTrainingAboutContact"}
+
+## 2026-10-13 08:26:54.637Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"About"}
+
+## 2026-10-13 08:26:54.637Z navigate
+- url: http://192.168.1.105:3000/about
+- via: pushState
+
+## 2026-10-13 08:30:02.772Z load
+- url: http://192.168.1.105:3000/about
+
+## 2026-10-13 08:30:05.697Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 08:30:05.698Z navigate
+- url: http://192.168.1.105:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 08:30:06.289Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 08:30:06.289Z navigate
+- url: http://192.168.1.105:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 08:30:37.780Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 08:30:37.780Z navigate
+- url: http://192.168.1.105:3000/services/aviation-training
+- via: pushState
+
+## 2026-10-13 08:30:38.808Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Dealership"}
+
+## 2026-10-13 08:30:38.809Z navigate
+- url: http://192.168.1.105:3000/services/aircraft-dealership
+- via: pushState
+
+## 2026-10-13 08:30:39.624Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 08:30:39.624Z navigate
+- url: http://192.168.1.105:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 08:30:40.965Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 08:30:40.966Z navigate
+- url: http://192.168.1.105:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 08:30:47.910Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Aeronautics LLC home","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 08:30:47.911Z navigate
+- url: http://192.168.1.105:3000/
+- via: pushState
+
+## 2026-10-13 08:31:01.847Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 08:31:01.847Z navigate
+- url: http://192.168.1.105:3000/services/aviation-training
+- via: pushState
+
