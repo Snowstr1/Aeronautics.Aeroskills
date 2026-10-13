@@ -1307,3 +1307,27 @@
 - url: http://192.168.1.105:3000/services/aviation-training
 - via: pushState
 
+## 2026-10-13 08:40:10.348Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Aeronautics LLC home","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 08:40:10.349Z navigate
+- url: http://192.168.1.105:3000/
+- via: pushState
+
+## 2026-10-13 08:47:58.330Z load
+- url: http://192.168.1.105:3000/
+
+## 2026-10-13 08:50:03.690Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 08:50:03.691Z navigate
+- url: http://192.168.1.105:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 08:50:17.451Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Technical Asset Management"}
+
+## 2026-10-13 08:50:17.452Z navigate
+- url: http://192.168.1.105:3000/services/aviation-consulting#asset-management
+- via: popstate
+

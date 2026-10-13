@@ -56,7 +56,7 @@ const AircraftDealershipPage = () => {
           >
             <motion.h1 
               variants={itemVariants}
-              className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight tracking-tight uppercase"
+              className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight uppercase"
             >
               EXCLUSIVE DEALER FOR ICP AIRCRAFT
             </motion.h1>

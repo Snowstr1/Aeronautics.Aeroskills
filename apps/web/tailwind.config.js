@@ -61,6 +61,16 @@ module.exports = {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+      },
+      // Display sizes get slightly open line heights so multi-line titles don't collide.
+      fontSize: {
+        "4xl": ["2.25rem", { lineHeight: "var(--leading-heading)" }],
+        "5xl": ["3rem", { lineHeight: "var(--leading-display)" }],
+        "6xl": ["3.75rem", { lineHeight: "var(--leading-display)" }],
+        "7xl": ["4.5rem", { lineHeight: "var(--leading-display)" }],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

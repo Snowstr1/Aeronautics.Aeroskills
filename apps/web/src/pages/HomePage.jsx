@@ -63,7 +63,7 @@ const HomePage = () => {
             }} transition={{
               duration: 0.5
             }} className="max-w-2xl">
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4 leading-tight" style={{
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-4 leading-tight" style={{
                 letterSpacing: '-0.02em'
               }}>
                   Aviation Services Across Mongolia

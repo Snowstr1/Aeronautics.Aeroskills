@@ -38,7 +38,7 @@ const ContactPage = () => {
             animate="visible"
             variants={fadeInUp}
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold text-[hsl(var(--brand-blue))] mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-[hsl(var(--brand-blue))] mb-6 tracking-tight">
               OUR ADDRESSES
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto leading-relaxed">

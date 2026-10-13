@@ -149,7 +149,7 @@ const AboutPage = () => {
                   <Plane className="w-4 h-4" />
                   YOU FLY, WE SUPPORT
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8" style={{ letterSpacing: '-0.02em' }}>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8" style={{ letterSpacing: '-0.02em' }}>
                   Aeronautics LLC
                 </h1>
                 

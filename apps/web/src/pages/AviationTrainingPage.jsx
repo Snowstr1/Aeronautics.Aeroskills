@@ -153,7 +153,7 @@ const AviationTrainingPage = () => {
           
           <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
             <motion.div {...fadeInUp}>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight uppercase text-shadow-hero" style={{ letterSpacing: '0.02em' }}>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight uppercase text-shadow-hero" style={{ letterSpacing: '0.02em' }}>
                 Aviation Training
               </h1>
               <div className="w-24 h-1.5 bg-accent rounded-full mx-auto mt-8 mb-6 shadow-sm"></div>

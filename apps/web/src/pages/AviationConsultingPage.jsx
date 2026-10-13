@@ -147,7 +147,7 @@ const AviationConsultingPage = () => {
               <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center text-white border border-white/20 shadow-xl">
                 <BarChart3 className="w-8 h-8" />
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white text-shadow-hero">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white text-shadow-hero">
                 Aviation Consulting
               </h1>
             </div>
