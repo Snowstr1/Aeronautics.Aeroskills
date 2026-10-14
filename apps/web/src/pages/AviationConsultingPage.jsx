@@ -135,7 +135,7 @@ const AviationConsultingPage = () => {
         <section className="relative py-24 lg:py-32 overflow-hidden hero-fixed-clip flex items-center justify-center min-h-[50vh]">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/70bdd990698593c3be80349e546ba6bf.jpg"
+              src="/images/consulting/hangar-strategy-meeting.jpg"
               alt="Aviation professionals discussing strategies near an aircraft inside a hangar"
               className="hero-fixed-media object-cover object-center"
             />
@@ -280,7 +280,7 @@ const AviationConsultingPage = () => {
               >
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-border aspect-[4/3]">
                   <img
-                    src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/59858bd63a82b494a35e621f2b1c9f58.jpg"
+                    src="/images/consulting/aircraft-runway-sunset.jpg"
                     alt="Aircraft on runway at sunset with golden sky"
                     className="w-full h-full object-cover object-center"
                   />

@@ -70,7 +70,7 @@ const AircraftDealershipPage = () => {
             {/* I.C.P. Logo & Intro */}
             <div className="mb-12">
               <div className="inline-block mb-8 shadow-sm rounded-xl border border-border overflow-hidden bg-card p-6">
-                <img src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/b558834f8fdd1f1096091084284e36b6.png" alt="I.C.P. official logo" className="h-12 w-auto object-contain" />
+                <img src="/images/logos/icp-logo.png" alt="I.C.P. official logo" className="h-12 w-auto object-contain" />
               </div>
               
               <p className="text-xl md:text-2xl font-medium text-foreground leading-relaxed mb-8 text-left">
@@ -112,7 +112,7 @@ const AircraftDealershipPage = () => {
                 <div className="flex flex-col group">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-8 shadow-lg bg-muted border border-border/50">
                     <img
-                      src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/unnamed-hN4Sk.jpg"
+                      src="/images/aircraft/savannah-sr-ultralight.jpg"
                       alt="Savannah SR Ultralight Aircraft"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
@@ -144,7 +144,7 @@ const AircraftDealershipPage = () => {
                 <div className="flex flex-col group">
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-8 shadow-lg bg-muted border border-border/50">
                     <img
-                      src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/unnamed-1-QFiq5.jpg"
+                      src="/images/aircraft/ventura-aircraft.jpg"
                       alt="Ventura Aircraft"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />

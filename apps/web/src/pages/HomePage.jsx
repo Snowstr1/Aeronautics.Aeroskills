@@ -98,7 +98,7 @@ const HomePage = () => {
               delay: 0.1
             }} className="relative w-full flex justify-center lg:justify-end">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 w-full max-w-md lg:max-w-full aspect-[4/3] lg:aspect-auto">
-                  <img src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/chatgpt-image-jun-25-2026-04_17_27-pm-7sVuI.png" alt="Professional aircraft on tarmac" className="w-full h-full object-cover" />
+                  <img src="/images/home/aircraft-on-tarmac.webp" alt="Professional aircraft on tarmac" className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--audit-navy))]/60 to-transparent"></div>
                 </div>
               </motion.div>

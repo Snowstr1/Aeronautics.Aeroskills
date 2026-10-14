@@ -174,7 +174,7 @@ const CoursesExamsPage = () => {
         {/* HERO SECTION */}
         <section className="relative min-h-[70vh] flex items-center border-b-8 border-secondary overflow-hidden hero-fixed-clip">
           <img
-            src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/2319a00238e7c1fdbdf8471446c18c5a.webp"
+            src="/images/backgrounds/cessna-runway-mountains.webp"
             alt=""
             className="hero-fixed-media object-cover"
           />

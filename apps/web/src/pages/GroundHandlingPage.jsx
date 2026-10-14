@@ -24,7 +24,7 @@ const GroundHandlingPage = () => {
         <section className="relative py-24 lg:py-32 overflow-hidden hero-fixed-clip flex items-center justify-center min-h-[50vh]">
           <div className="absolute inset-0 z-0">
             <img 
-              src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/c2f742825aaf840431180795d85bc025.jpg" 
+              src="/images/backgrounds/ground-handling-marshaller.jpg" 
               alt="Ground handling worker in safety gear directing aircraft on tarmac" 
               className="hero-fixed-media object-cover object-center" 
             />
@@ -218,7 +218,7 @@ const GroundHandlingPage = () => {
 
               <motion.div {...fadeInUp} className="relative w-full">
                 <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl border border-border aspect-[4/3]">
-                  <img src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/images-1-DvjgW.jpeg" alt="Toyota Alphard luxury vehicle exterior" className="w-full h-full object-cover object-center" />
+                  <img src="/images/ground-handling/toyota-alphard.jpeg" alt="Toyota Alphard luxury vehicle exterior" className="w-full h-full object-cover object-center" />
                 </div>
               </motion.div>
             </div>
@@ -241,7 +241,7 @@ const GroundHandlingPage = () => {
                   <div className="flex flex-col items-center gap-6">
                     <div className="w-40 h-40 rounded-full bg-white shadow-sm border border-border flex items-center justify-center p-4 overflow-hidden">
                       <img 
-                        src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/3021b5543409d1289e5f9c7f9eb8602c.png" 
+                        src="/images/logos/china-united-airlines-logo.png" 
                         alt="China United Airlines logo" 
                         className="w-full h-full object-contain"
                       />
@@ -260,7 +260,7 @@ const GroundHandlingPage = () => {
                   <div className="flex flex-col items-center gap-6">
                     <div className="w-40 h-40 rounded-full bg-white shadow-sm border border-border flex items-center justify-center p-4 overflow-hidden">
                       <img 
-                        src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/85f5fa70309de84b176d88bcaebee84b.png" 
+                        src="/images/logos/spring-airlines-logo.png" 
                         alt="Spring Airlines logo" 
                         className="w-full h-full object-contain"
                       />
@@ -279,7 +279,7 @@ const GroundHandlingPage = () => {
                   <div className="flex flex-col items-center gap-6">
                     <div className="w-40 h-40 rounded-full bg-white shadow-sm border border-border flex items-center justify-center p-4 overflow-hidden">
                       <img 
-                        src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/7d21f0b390e75d99267e5e2a0dd76ac9.png" 
+                        src="/images/logos/my-freighter-airlines-logo.png" 
                         alt="My Freighter Airlines logo" 
                         className="w-full h-full object-contain"
                       />

@@ -76,19 +76,19 @@ const initialLocations = [
   {
     name: "Chongqing Base",
     desc: "The first CCAR-142 flight training center, there are currently 2 types of flight simulator for training, including A320 and B747. At the same time, the Chongqing base also has a set of ARJ021 cabin training equipment. In terms of aviation training capability for A320 and B747 aircraft.",
-    image: "https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/3023cc0c7a9639b023f9d8521dc58ae8.png",
+    image: "/images/training/chongqing-base.png",
     features: []
   },
   {
     name: "Zhengzhou Base",
     desc: "Flight Training Center uses B737 as the main training simulator. Currently, its customers are Longhao Airlines and Zhongzhou Airlines.",
-    image: "https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/c32b488e4e4920ec31f9bfdada170e82.png",
+    image: "/images/training/zhengzhou-base.png",
     features: []
   },
   {
     name: "Shanghai Base",
     desc: "There 2 types of flight simulator for training, including KA350 and MI-171 (Mi8).",
-    image: "https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/876be1cb9a9d53fd0a17216e14611d55.png",
+    image: "/images/training/shanghai-base.png",
     features: []
   }
 ];
@@ -144,7 +144,7 @@ const AviationTrainingPage = () => {
         {/* HERO SECTION */}
         <section className="relative min-h-[60vh] flex items-center justify-center pt-20 border-b-8 border-secondary overflow-hidden hero-fixed-clip">
           <img 
-            src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/2319a00238e7c1fdbdf8471446c18c5a.webp" 
+            src="/images/backgrounds/cessna-runway-mountains.webp" 
             alt="Cessna aircraft on runway with mountains" 
             className="hero-fixed-media object-cover"
           />
@@ -174,7 +174,7 @@ const AviationTrainingPage = () => {
               >
                 <div className="bg-white p-8 rounded-2xl shadow-xl border border-border">
                   <img 
-                    src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/30cf30147226e78c8a20714f3778b7ee.png" 
+                    src="/images/logos/china-sky-wings-logo.png" 
                     alt="China Sky-Wings logo with blue wings design" 
                     className="w-full max-w-sm h-auto object-contain"
                   />
@@ -395,7 +395,7 @@ const AviationTrainingPage = () => {
             >
               <div className="relative p-2 rounded-2xl bg-white shadow-xl border border-border inline-block">
                 <img 
-                  src="https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/f2f0eee0bc23f3fb3728e338ac6eba01.png" 
+                  src="/images/training/aviation-authority-certifications.webp" 
                   alt="Aviation Authority Certifications" 
                   className="w-full h-auto max-h-[600px] object-contain rounded-xl"
                 />

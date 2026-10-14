@@ -18,8 +18,8 @@
 //   image         thumbnail URL
 
 const IMAGES = {
-  runway: 'https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/2319a00238e7c1fdbdf8471446c18c5a.webp',
-  simulator: 'https://horizons-cdn.hostinger.com/47a882c9-2ca7-4b34-aae3-19f8817a45d6/3023cc0c7a9639b023f9d8521dc58ae8.png',
+  runway: '/images/backgrounds/cessna-runway-mountains.webp',
+  simulator: '/images/training/chongqing-base.png',
   groundHandling: 'https://images.unsplash.com/photo-1676186318068-df5df0b35130?auto=format&fit=crop&w=800&q=75',
   airport: 'https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=800&q=75',
   consulting: 'https://images.unsplash.com/photo-1692081822085-6f6e154087cd?auto=format&fit=crop&w=800&q=75',
