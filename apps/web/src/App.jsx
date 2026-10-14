@@ -16,6 +16,7 @@ import AviationConsultingPage from '@/pages/AviationConsultingPage.jsx';
 import GroundHandlingPage from '@/pages/GroundHandlingPage.jsx';
 import AircraftDealershipPage from '@/pages/AircraftDealershipPage.jsx';
 import AviationTrainingPage from '@/pages/AviationTrainingPage.jsx';
+import CoursesExamsPage from '@/pages/CoursesExamsPage.jsx';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             <Route path="/services/aviation-training" element={<AviationTrainingPage />} />
             {/* Pickup Service was merged into Ground Handling; keep old links working */}
             <Route path="/services/pick-up-service" element={<Navigate to="/services/ground-handling" replace />} />
+
+            {/* Courses & Exams (Training dropdown targets #courses and #exams) */}
+            <Route path="/training" element={<CoursesExamsPage />} />
 
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />

@@ -1369,3 +1369,396 @@
 - url: http://192.168.1.105:3000/services/aviation-consulting
 - via: pushState
 
+## 2026-10-13 09:20:01.272Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Aeronautics LLC home","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 09:20:01.273Z navigate
+- url: http://192.168.1.105:3000/
+- via: pushState
+
+## 2026-10-13 09:20:05.409Z click
+- element: {"tag":"h3","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Flight Permits"}
+
+## 2026-10-13 09:20:06.838Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Flight PermitsRapid acquisition of overflight, landing, and diplomatic clearances."}
+
+## 2026-10-13 09:20:09.090Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-10-13 09:20:09.090Z navigate
+- url: http://192.168.1.105:3000/contact
+- via: pushState
+
+## 2026-10-13 09:20:14.916Z click
+- element: {"tag":"p","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Chinggis Khaan International Airport (ZMCK/UBN),Sergelen Sum, Tuv province 41091,Mongolia"}
+
+## 2026-10-13 09:23:00.477Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"About"}
+
+## 2026-10-13 09:23:00.478Z navigate
+- url: http://192.168.1.105:3000/about
+- via: pushState
+
+## 2026-10-13 09:23:38.695Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 09:23:38.696Z navigate
+- url: http://192.168.1.105:3000/services/aviation-training
+- via: pushState
+
+## 2026-10-13 09:25:58.461Z click
+- element: {"tag":"h1","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Aviation Training"}
+
+## 2026-10-13 10:05:43.434Z load
+- url: http://192.168.1.205:3000/
+
+## 2026-10-13 10:05:45.624Z navigate
+- url: http://192.168.1.205:3000/
+- via: replaceState
+
+## 2026-10-13 10:05:54.445Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 10:05:54.447Z navigate
+- url: http://192.168.1.205:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 10:05:58.297Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 10:05:58.298Z navigate
+- url: http://192.168.1.205:3000/services/aviation-training
+- via: pushState
+
+## 2026-10-13 10:06:00.066Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"About"}
+
+## 2026-10-13 10:06:00.067Z navigate
+- url: http://192.168.1.205:3000/about
+- via: pushState
+
+## 2026-10-13 10:06:06.603Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-10-13 10:06:06.603Z navigate
+- url: http://192.168.1.205:3000/contact
+- via: pushState
+
+## 2026-10-13 10:06:14.889Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ConsultingGround HandlingDealershipTrainingAboutContact"}
+
+## 2026-10-13 10:06:15.415Z click
+- element: {"tag":"a","role":null,"ariaLabel":"Aeronautics LLC home","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 10:06:15.416Z navigate
+- url: http://192.168.1.205:3000/
+- via: pushState
+
+## 2026-10-13 11:38:41.947Z load
+- url: http://192.168.207.182:3000/
+
+## 2026-10-13 11:38:44.036Z navigate
+- url: http://192.168.207.182:3000/
+- via: replaceState
+
+## 2026-10-13 11:39:03.570Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 11:39:03.571Z navigate
+- url: http://192.168.207.182:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 11:39:08.098Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 11:39:08.099Z navigate
+- url: http://192.168.207.182:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 11:39:11.494Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Dealership"}
+
+## 2026-10-13 11:39:11.495Z navigate
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+- via: pushState
+
+## 2026-10-13 11:39:15.314Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 11:39:15.315Z navigate
+- url: http://192.168.207.182:3000/services/aviation-training
+- via: pushState
+
+## 2026-10-13 11:39:21.339Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 11:39:21.341Z navigate
+- url: http://192.168.207.182:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 11:39:23.470Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Dealership"}
+
+## 2026-10-13 11:39:23.470Z navigate
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+- via: pushState
+
+## 2026-10-13 11:39:25.514Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Training"}
+
+## 2026-10-13 11:39:25.515Z navigate
+- url: http://192.168.207.182:3000/services/aviation-training
+- via: pushState
+
+## 2026-10-13 11:39:26.798Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"About"}
+
+## 2026-10-13 11:39:26.799Z navigate
+- url: http://192.168.207.182:3000/about
+- via: pushState
+
+## 2026-10-13 11:39:28.047Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Contact"}
+
+## 2026-10-13 11:39:28.048Z navigate
+- url: http://192.168.207.182:3000/contact
+- via: pushState
+
+## 2026-10-13 11:40:15.743Z load
+- url: http://192.168.207.182:3000/contact
+
+## 2026-10-13 11:40:53.328Z load
+- url: http://192.168.207.182:3000/
+
+## 2026-10-13 11:40:53.441Z navigate
+- url: http://192.168.207.182:3000/
+- via: replaceState
+
+## 2026-10-13 11:41:04.318Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 11:41:07.334Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 11:41:07.335Z navigate
+- url: http://192.168.207.182:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 11:41:11.325Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 11:41:12.891Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-13 11:41:12.892Z navigate
+- url: http://192.168.207.182:3000/services/ground-handling
+- via: pushState
+
+## 2026-10-13 11:41:17.629Z load
+- url: http://192.168.207.182:3000/services/ground-handling
+
+## 2026-10-13 11:41:50.377Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground HandlingProfessional, efficient, and safe ground handling services across all major airports in Mongolia. Operated directly by our AGS LLC subsidiary to ensure uncompromising quality."}
+
+## 2026-10-13 11:41:51.689Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground HandlingProfessional, efficient, and safe ground handling services across all major airports in Mongolia. Operated directly by our AGS LLC subsidiary to ensure uncompromising quality."}
+
+## 2026-10-13 11:42:18.268Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 11:42:20.483Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Consulting"}
+
+## 2026-10-13 11:42:20.484Z navigate
+- url: http://192.168.207.182:3000/services/aviation-consulting
+- via: pushState
+
+## 2026-10-13 11:42:26.216Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ConsultingGround HandlingDealershipTrainingAboutContact"}
+
+## 2026-10-13 11:42:29.373Z load
+- url: http://192.168.207.182:3000/services/aviation-consulting
+
+## 2026-10-13 11:42:41.119Z click
+- element: {"tag":"button","role":null,"ariaLabel":"Toggle menu","name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":""}
+
+## 2026-10-13 11:42:43.372Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Dealership"}
+
+## 2026-10-13 11:42:43.373Z navigate
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+- via: pushState
+
+## 2026-10-13 11:42:49.287Z load
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+
+## 2026-10-13 11:43:11.252Z load
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+
+## 2026-10-13 11:43:11.400Z navigate
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+- via: replaceState
+
+## 2026-10-13 11:43:13.464Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"EXCLUSIVE DEALER FOR ICP AIRCRAFT"}
+
+## 2026-10-13 11:43:56.323Z load
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+
+## 2026-10-13 11:44:32.846Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"EXCLUSIVE DEALER FOR ICP AIRCRAFT"}
+
+## 2026-10-13 11:44:40.530Z load
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+
+## 2026-10-13 11:52:13.770Z click
+- element: {"tag":"div","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"I.C.P. Aviation Corporate Video"}
+
+## 2026-10-13 11:52:21.559Z load
+- url: http://192.168.207.182:3000/services/aircraft-dealership
+
+## 2026-10-14 06:39:52.166Z load
+- url: http://192.168.1.106:3000/
+
+## 2026-10-14 06:39:52.206Z navigate
+- url: http://192.168.1.106:3000/
+- via: replaceState
+
+## 2026-10-14 06:42:34.603Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"CoursesAviation training programs"}
+
+## 2026-10-14 06:42:34.604Z navigate
+- url: http://192.168.1.106:3000/training#courses
+- via: pushState
+
+## 2026-10-14 06:42:42.692Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"View Course: Safety Management Systems (SMS)"}
+
+## 2026-10-14 06:42:44.604Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Enquire about this course"}
+
+## 2026-10-14 06:42:44.605Z navigate
+- url: http://192.168.1.106:3000/contact
+- via: pushState
+
+## 2026-10-14 06:42:47.250Z navigate
+- url: http://192.168.1.106:3000/training#courses
+- via: popstate
+
+## 2026-10-14 06:43:02.991Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"search","id":"catalog-search","placeholder":"Search courses and exams...","label":"Search courses and exams","value":"","valueLength":0,"text":""}
+
+## 2026-10-14 06:43:03.157Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"search","id":"catalog-search","placeholder":"Search courses and exams...","label":"Search courses and exams","value":"","valueLength":0,"text":""}
+
+## 2026-10-14 06:43:05.826Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Courses"}
+
+## 2026-10-14 06:43:06.683Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Exams"}
+
+## 2026-10-14 06:43:07.513Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Courses"}
+
+## 2026-10-14 06:43:10.118Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"ExamsAssessments and examinations"}
+
+## 2026-10-14 06:43:10.118Z navigate
+- url: http://192.168.1.106:3000/training#exams
+- via: pushState
+
+## 2026-10-14 06:43:21.259Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"View Exam: Aviation Fundamentals Assessment"}
+
+## 2026-10-14 06:43:23.113Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-10-14 06:48:44.571Z click
+- element: {"tag":"a","role":null,"ariaLabel":null,"name":null,"type":null,"id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"CoursesAviation training programs"}
+
+## 2026-10-14 06:48:44.572Z navigate
+- url: http://192.168.1.106:3000/training#courses
+- via: pushState
+
+## 2026-10-14 06:48:55.163Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"View Exam: Aviation Fundamentals Assessment"}
+
+## 2026-10-14 06:48:57.783Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Close"}
+
+## 2026-10-14 06:49:07.487Z focus
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"search","id":"catalog-search","placeholder":"Search courses and exams...","label":"Search courses and exams","value":"","valueLength":0,"text":""}
+
+## 2026-10-14 06:49:07.705Z click
+- element: {"tag":"input","role":null,"ariaLabel":null,"name":null,"type":"search","id":"catalog-search","placeholder":"Search courses and exams...","label":"Search courses and exams","value":"","valueLength":0,"text":""}
+
+## 2026-10-14 06:49:22.156Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Aviation Fundamentals"}
+
+## 2026-10-14 06:49:22.979Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-14 06:49:23.485Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Safety Management"}
+
+## 2026-10-14 06:49:24.083Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"All categories"}
+
+## 2026-10-14 06:49:38.274Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Exams"}
+
+## 2026-10-14 06:49:39.892Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Courses"}
+
+## 2026-10-14 06:49:40.763Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Exams"}
+
+## 2026-10-14 06:49:41.247Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Courses"}
+
+## 2026-10-14 06:49:44.810Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"All"}
+
+## 2026-10-14 06:49:49.062Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Explore Courses"}
+
+## 2026-10-14 06:49:49.063Z navigate
+- url: http://192.168.1.106:3000/training#courses
+- via: replaceState
+
+## 2026-10-14 06:49:51.213Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Browse Exams"}
+
+## 2026-10-14 06:49:51.214Z navigate
+- url: http://192.168.1.106:3000/training#exams
+- via: replaceState
+
+## 2026-10-14 06:49:54.106Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Courses"}
+
+## 2026-10-14 06:49:54.753Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Browse Exams"}
+
+## 2026-10-14 06:49:54.753Z navigate
+- url: http://192.168.1.106:3000/training#exams
+- via: replaceState
+
+## 2026-10-14 06:49:57.767Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Exams"}
+
+## 2026-10-14 06:49:58.406Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Browse Exams"}
+
+## 2026-10-14 06:49:58.406Z navigate
+- url: http://192.168.1.106:3000/training#exams
+- via: replaceState
+
+## 2026-10-14 06:50:00.541Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Safety Management"}
+
+## 2026-10-14 06:50:01.375Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Ground Handling"}
+
+## 2026-10-14 06:50:02.577Z click
+- element: {"tag":"button","role":null,"ariaLabel":null,"name":null,"type":"button","id":null,"placeholder":null,"label":null,"value":null,"valueLength":0,"text":"Reset filters"}
+
