@@ -5,6 +5,8 @@ import { Toaster } from 'sonner';
 import ScrollToTop from '@/components/ScrollToTop.jsx';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import ProtectedRoute from '@/components/ProtectedRoute.jsx';
+import { AuthProvider } from '@/contexts/AuthContext.jsx';
 
 import HomePage from '@/pages/HomePage.jsx';
 import ServicesPage from '@/pages/ServicesPage.jsx';
@@ -18,50 +20,66 @@ import AircraftDealershipPage from '@/pages/AircraftDealershipPage.jsx';
 import AviationTrainingPage from '@/pages/AviationTrainingPage.jsx';
 import CoursesExamsPage from '@/pages/CoursesExamsPage.jsx';
 
+// Auth Pages
+import LoginPage from '@/pages/auth/LoginPage.jsx';
+import SignupPage from '@/pages/auth/SignupPage.jsx';
+import ForgotPasswordPage from '@/pages/auth/ForgotPasswordPage.jsx';
+import ResetPasswordPage from '@/pages/auth/ResetPasswordPage.jsx';
+import AccountPage from '@/pages/auth/AccountPage.jsx';
+
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Toaster position="bottom-right" richColors />
-      <div className="flex flex-col min-h-screen bg-background font-sans text-foreground">
-        <Header />
-        <div className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            
-            {/* Services Routes */}
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/services/aviation-consulting" element={<AviationConsultingPage />} />
-            <Route path="/services/ground-handling" element={<GroundHandlingPage />} />
-            <Route path="/services/aircraft-dealership" element={<AircraftDealershipPage />} />
-            {/* Audit & Assurance was merged into Aviation Consulting; keep old links working */}
-            <Route path="/services/audit-assurance" element={<Navigate to="/services/aviation-consulting#audit-assurance" replace />} />
-            <Route path="/services/aviation-training" element={<AviationTrainingPage />} />
-            {/* Pickup Service was merged into Ground Handling; keep old links working */}
-            <Route path="/services/pick-up-service" element={<Navigate to="/services/ground-handling" replace />} />
+    <AuthProvider>
+      <Router>
+        <ScrollToTop />
+        <Toaster position="bottom-right" richColors />
+        <div className="flex flex-col min-h-screen bg-background font-sans text-foreground">
+          <Header />
+          <div className="flex-grow">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              
+              {/* Services Routes */}
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services/aviation-consulting" element={<AviationConsultingPage />} />
+              <Route path="/services/ground-handling" element={<GroundHandlingPage />} />
+              <Route path="/services/aircraft-dealership" element={<AircraftDealershipPage />} />
+              {/* Audit & Assurance was merged into Aviation Consulting; keep old links working */}
+              <Route path="/services/audit-assurance" element={<Navigate to="/services/aviation-consulting#audit-assurance" replace />} />
+              <Route path="/services/aviation-training" element={<AviationTrainingPage />} />
+              {/* Pickup Service was merged into Ground Handling; keep old links working */}
+              <Route path="/services/pick-up-service" element={<Navigate to="/services/ground-handling" replace />} />
 
-            {/* Courses & Exams (Training dropdown targets #courses and #exams) */}
-            <Route path="/training" element={<CoursesExamsPage />} />
+              {/* Courses & Exams (Training dropdown targets #courses and #exams) */}
+              <Route path="/training" element={<CoursesExamsPage />} />
 
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            
-            {/* Catch-all 404 Route */}
-            <Route path="*" element={
-              <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center bg-muted">
-                <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
-                <h2 className="text-2xl font-bold text-foreground mb-4">Page Not Found</h2>
-                <p className="text-secondary mb-8">The requested page could not be located.</p>
-                <a href="/" className="px-6 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary/90 transition-colors shadow-sm">
-                  Return Home
-                </a>
-              </div>
-            } />
-          </Routes>
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+
+              {/* Auth Routes */}
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
+              <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+              <Route path="/reset-password" element={<ResetPasswordPage />} />
+              <Route path="/account" element={<ProtectedRoute><AccountPage /></ProtectedRoute>} />
+              
+              {/* Catch-all 404 Route */}
+              <Route path="*" element={
+                <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 text-center bg-muted">
+                  <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
+                  <h2 className="text-2xl font-bold text-foreground mb-4">Page Not Found</h2>
+                  <p className="text-secondary mb-8">The requested page could not be located.</p>
+                  <a href="/" className="px-6 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary/90 transition-colors shadow-sm">
+                    Return Home
+                  </a>
+                </div>
+              } />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    </AuthProvider>
   );
 }
 

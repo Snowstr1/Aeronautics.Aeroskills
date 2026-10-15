@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, GraduationCap, ClipboardCheck } from 'lucide-react';
+import { Menu, X, ChevronDown, GraduationCap, ClipboardCheck, UserRound } from 'lucide-react';
 import Logo from '@/components/Logo.jsx';
+import { useAuth } from '@/contexts/AuthContext.jsx';
 
 const trainingLinks = [
   { label: 'Courses', description: 'Aviation training programs', path: '/training#courses', icon: GraduationCap },
@@ -184,6 +185,10 @@ const NavDropdown = ({ link, active }) => {
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { user } = useAuth();
+  const accountLink = user
+    ? { label: 'My account', path: '/account' }
+    : { label: 'Log in', path: '/login' };
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -207,7 +212,7 @@ const Header = () => {
             <Logo className="group-hover:scale-105 filter drop-shadow-md" />
           </Link>
 
-          <nav aria-label="Main" className="hidden lg:flex items-center gap-7 xl:gap-10 ml-auto">
+          <nav aria-label="Main" className="hidden lg:flex items-center gap-5 xl:gap-10 ml-auto">
             {[...servicesLinks, ...mainLinks].map((link) => link.children ? (
               <NavDropdown key={link.path} link={link} active={isLinkActive(link)} />
             ) : (
@@ -220,6 +225,17 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+
+            {/* Icon only at lg so the nav fits at 1024px; the label appears from xl */}
+            <Link
+              to={accountLink.path}
+              aria-label={accountLink.label}
+              aria-current={isActive(accountLink.path) ? 'page' : undefined}
+              className="inline-flex items-center gap-2 rounded-lg bg-accent px-3 py-2 xl:px-4 text-base font-semibold text-accent-foreground whitespace-nowrap shadow-sm outline-none transition-colors hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-white/60"
+            >
+              <UserRound className="w-5 h-5" aria-hidden="true" />
+              <span className="hidden xl:inline">{accountLink.label}</span>
+            </Link>
           </nav>
 
           <button
@@ -300,6 +316,15 @@ const Header = () => {
                 </Link>
               ))}
             </div>
+
+            <Link
+              to={accountLink.path}
+              aria-current={isActive(accountLink.path) ? 'page' : undefined}
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-base font-bold bg-accent text-accent-foreground hover:bg-accent/90 transition-colors"
+            >
+              <UserRound className="w-5 h-5" aria-hidden="true" />
+              {accountLink.label}
+            </Link>
           </div>
         </div>
       )}
