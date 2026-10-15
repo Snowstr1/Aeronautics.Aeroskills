@@ -6,7 +6,7 @@ import * as z from 'zod';
 import { toast } from 'sonner';
 import { Loader2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext.jsx';
-import AuthLayout, { Field, inputClass, submitButtonClass } from './AuthLayout.jsx';
+import AuthLayout, { Field, PasswordInput, submitButtonClass } from './AuthLayout.jsx';
 
 const formSchema = z
   .object({
@@ -74,26 +74,22 @@ const ResetPasswordPage = () => {
     <AuthLayout pageTitle="Reset password" title="Set a new password" subtitle={`For ${user.email}`}>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
         <Field id="password" label="New password" error={errors.password}>
-          <input
+          <PasswordInput
             id="password"
-            type="password"
             autoComplete="new-password"
             placeholder="At least 8 characters"
             aria-invalid={errors.password ? 'true' : 'false'}
             aria-describedby={errors.password ? 'password-error' : undefined}
-            className={inputClass}
             {...register('password')}
           />
         </Field>
 
         <Field id="confirmPassword" label="Confirm new password" error={errors.confirmPassword}>
-          <input
+          <PasswordInput
             id="confirmPassword"
-            type="password"
             autoComplete="new-password"
             aria-invalid={errors.confirmPassword ? 'true' : 'false'}
             aria-describedby={errors.confirmPassword ? 'confirmPassword-error' : undefined}
-            className={inputClass}
             {...register('confirmPassword')}
           />
         </Field>

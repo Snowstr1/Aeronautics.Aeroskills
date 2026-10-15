@@ -23,7 +23,7 @@ const mainLinks = [
 ];
 
 const navItemBase =
-  'relative inline-flex items-center gap-1.5 py-2 text-base font-semibold tracking-wide whitespace-nowrap outline-none transition-colors ' +
+  'relative inline-flex items-center gap-1.5 py-2 text-[15px] font-normal tracking-normal whitespace-nowrap outline-none transition-colors ' +
   'after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-full after:origin-left after:rounded-full ' +
   'after:bg-accent after:transition-transform after:duration-300 focus-visible:ring-2 focus-visible:ring-white/60 rounded-sm';
 
@@ -169,7 +169,7 @@ const NavDropdown = ({ link, active }) => {
                     <Icon className="w-5 h-5" aria-hidden="true" />
                   </span>
                   <span className="flex flex-col">
-                    <span className="text-base font-semibold text-foreground">{child.label}</span>
+                    <span className="text-base font-medium text-foreground">{child.label}</span>
                     <span className="text-sm text-muted-foreground">{child.description}</span>
                   </span>
                 </Link>
@@ -186,9 +186,11 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const { user } = useAuth();
+  const displayName =
+    user?.user_metadata?.full_name?.trim() || user?.email?.split('@')[0] || 'My account';
   const accountLink = user
-    ? { label: 'My account', path: '/account' }
-    : { label: 'Log in', path: '/login' };
+    ? { label: displayName, title: displayName, path: '/account' }
+    : { label: 'Log in', title: 'Log in', path: '/login' };
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -230,11 +232,12 @@ const Header = () => {
             <Link
               to={accountLink.path}
               aria-label={accountLink.label}
+              title={accountLink.title}
               aria-current={isActive(accountLink.path) ? 'page' : undefined}
-              className="inline-flex items-center gap-2 rounded-lg bg-accent px-3 py-2 xl:px-4 text-base font-semibold text-accent-foreground whitespace-nowrap shadow-sm outline-none transition-colors hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-white/60"
+              className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-accent px-3 py-2 xl:px-4 text-[15px] font-normal tracking-normal text-accent-foreground whitespace-nowrap shadow-sm outline-none transition-colors hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-white/60"
             >
-              <UserRound className="w-5 h-5" aria-hidden="true" />
-              <span className="hidden xl:inline">{accountLink.label}</span>
+              <UserRound className="w-5 h-5 xl:w-4 xl:h-4 shrink-0" strokeWidth={1.75} aria-hidden="true" />
+              <span className="hidden xl:inline-block max-w-[16rem] truncate">{accountLink.label}</span>
             </Link>
           </nav>
 
@@ -260,7 +263,7 @@ const Header = () => {
                 <React.Fragment key={link.path}>
                   <Link
                     to={link.path}
-                    className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                    className={`block px-4 py-3 rounded-lg text-base font-normal transition-colors ${
                       isActive(link.path)
                         ? 'bg-primary/10 text-primary border-l-4 border-primary'
                         : 'text-foreground hover:bg-muted'
@@ -278,7 +281,7 @@ const Header = () => {
                             key={child.path}
                             to={child.path}
                             aria-current={childActive ? 'location' : undefined}
-                            className={`flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                            className={`flex items-center gap-2.5 px-4 py-2.5 rounded-lg text-sm font-normal transition-colors ${
                               childActive ? 'bg-primary/10 text-primary' : 'text-foreground hover:bg-muted'
                             }`}
                           >
@@ -306,7 +309,7 @@ const Header = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  className={`block px-4 py-3 rounded-lg text-base font-normal transition-colors ${
                     isActive(link.path)
                       ? 'bg-muted text-primary border-l-4 border-primary'
                       : 'text-foreground hover:bg-muted'
@@ -319,11 +322,12 @@ const Header = () => {
 
             <Link
               to={accountLink.path}
+              title={accountLink.title}
               aria-current={isActive(accountLink.path) ? 'page' : undefined}
-              className="flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-base font-bold bg-accent text-accent-foreground hover:bg-accent/90 transition-colors"
+              className="flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-[15px] font-normal tracking-normal bg-accent text-accent-foreground hover:bg-accent/90 transition-colors"
             >
-              <UserRound className="w-5 h-5" aria-hidden="true" />
-              {accountLink.label}
+              <UserRound className="w-5 h-5 shrink-0" strokeWidth={1.75} aria-hidden="true" />
+              <span className="max-w-[16rem] truncate">{accountLink.label}</span>
             </Link>
           </div>
         </div>

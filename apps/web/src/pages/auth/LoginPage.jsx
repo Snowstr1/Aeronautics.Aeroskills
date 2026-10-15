@@ -6,7 +6,7 @@ import * as z from 'zod';
 import { toast } from 'sonner';
 import { Loader2 } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext.jsx';
-import AuthLayout, { Field, inputClass, submitButtonClass } from './AuthLayout.jsx';
+import AuthLayout, { Field, PasswordInput, inputClass, submitButtonClass } from './AuthLayout.jsx';
 
 const formSchema = z.object({
   email: z.string().trim().email('Enter a valid email address'),
@@ -80,21 +80,20 @@ const LoginPage = () => {
           id="password"
           label="Password"
           error={errors.password}
-          action={
-            <Link to="/forgot-password" className="text-sm font-medium text-primary hover:text-accent transition-colors">
-              Forgot password?
-            </Link>
-          }
         >
-          <input
+          <PasswordInput
             id="password"
-            type="password"
             autoComplete="current-password"
             aria-invalid={errors.password ? 'true' : 'false'}
             aria-describedby={errors.password ? 'password-error' : undefined}
             className={inputClass}
             {...register('password')}
           />
+          <div className="mt-2 flex justify-end">
+            <Link to="/forgot-password" className="text-sm text-primary hover:underline">
+              Forgot password?
+            </Link>
+          </div>
         </Field>
 
         <button type="submit" disabled={isSubmitting} className={submitButtonClass}>

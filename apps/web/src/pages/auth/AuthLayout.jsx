@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { forwardRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { Eye, EyeOff } from 'lucide-react';
 
 export const inputClass =
   'w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground ' +
@@ -27,6 +28,51 @@ export const Field = ({ id, label, error, action, children }) => (
     )}
   </div>
 );
+
+// The password is visible only while the eye button is held down (pointer, Space or Enter).
+export const PasswordInput = forwardRef(({ className = inputClass, ...props }, ref) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const show = () => setIsVisible(true);
+  const hide = () => setIsVisible(false);
+
+  const handleKeyDown = (event) => {
+    if (event.key === ' ' || event.key === 'Enter') {
+      event.preventDefault();
+      show();
+    }
+  };
+
+  const handleKeyUp = (event) => {
+    if (event.key === ' ' || event.key === 'Enter') hide();
+  };
+
+  const Icon = isVisible ? EyeOff : Eye;
+
+  return (
+    <div className="relative">
+      <input ref={ref} {...props} type={isVisible ? 'text' : 'password'} className={`${className} pr-12`} />
+      <button
+        type="button"
+        tabIndex={0}
+        aria-label="Hold to show password"
+        onPointerDown={(event) => {
+          // Keep focus and the cursor position in the input.
+          event.preventDefault();
+          show();
+        }}
+        onPointerUp={hide}
+        onPointerLeave={hide}
+        onPointerCancel={hide}
+        onKeyDown={handleKeyDown}
+        onKeyUp={handleKeyUp}
+        onBlur={hide}
+        className="absolute inset-y-0 right-0 flex items-center justify-center w-12 rounded-r-lg text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 select-none touch-none"
+      >
+        <Icon className="w-5 h-5" aria-hidden="true" />
+      </button>
+    </div>
+  );
+});
 
 const AuthLayout = ({ pageTitle, title, subtitle, footer, children }) => (
   <main className="min-h-[calc(100vh-5rem)] bg-muted px-4 py-16 sm:py-20 flex flex-col items-center justify-center">

@@ -6,7 +6,7 @@ import * as z from 'zod';
 import { toast } from 'sonner';
 import { Loader2, MailCheck } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext.jsx';
-import AuthLayout, { Field, inputClass, submitButtonClass } from './AuthLayout.jsx';
+import AuthLayout, { Field, PasswordInput, inputClass, submitButtonClass } from './AuthLayout.jsx';
 
 const formSchema = z
   .object({
@@ -97,18 +97,23 @@ const SignupPage = () => {
       footer={loginFooter}
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5" noValidate>
-        {fields.map(({ name, label, ...inputProps }) => (
-          <Field key={name} id={name} label={label} error={errors[name]}>
-            <input
-              id={name}
-              aria-invalid={errors[name] ? 'true' : 'false'}
-              aria-describedby={errors[name] ? `${name}-error` : undefined}
-              className={inputClass}
-              {...inputProps}
-              {...register(name)}
-            />
-          </Field>
-        ))}
+        {fields.map(({ name, label, type, ...inputProps }) => {
+          const isPassword = type === 'password';
+          const Input = isPassword ? PasswordInput : 'input';
+          return (
+            <Field key={name} id={name} label={label} error={errors[name]}>
+              <Input
+                id={name}
+                type={isPassword ? undefined : type}
+                aria-invalid={errors[name] ? 'true' : 'false'}
+                aria-describedby={errors[name] ? `${name}-error` : undefined}
+                className={inputClass}
+                {...inputProps}
+                {...register(name)}
+              />
+            </Field>
+          );
+        })}
 
         <button type="submit" disabled={isSubmitting} className={submitButtonClass}>
           {isSubmitting && <Loader2 className="w-5 h-5 animate-spin" aria-hidden="true" />}
